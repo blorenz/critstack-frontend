@@ -38,7 +38,7 @@ export default async function handleRequest(
 
 		const { pipe, abort } = renderToPipeableStream(
 			<I18nextProvider i18n={instance}>
-				<ServerRouter abortDelay={ABORT_DELAY} context={context} url={request.url} />
+				<ServerRouter context={context} url={request.url} />
 			</I18nextProvider>,
 			{
 				[callbackName]: () => {
