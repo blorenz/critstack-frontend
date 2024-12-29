@@ -1,4 +1,4 @@
-import * as Module from "./_index"
+import * as Module from "./_route"
 
 describe("Home route", () => {
 	it("should render the home page text properly in english", async ({ renderStub }) => {

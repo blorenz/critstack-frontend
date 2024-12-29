@@ -51,7 +51,7 @@ export default function Index() {
   );
 }
 `
-	await fs.writeFile("app/routes/_index.tsx", file, "utf-8")
+	await fs.writeFile("app/routes/home/_route.tsx", file, "utf-8")
 	log(chalk.green("Index route is reverted to empty state"))
 }
 
